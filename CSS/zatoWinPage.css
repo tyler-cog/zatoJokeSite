@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/Images/homeBG_test.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#textBox {
+    position: absolute;
+    top: 2.5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke: 1px rgb(255, 0, 0);
+    /* -webkit-text-stroke: 1px black;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000; */
+}
+
+#noteBox {
+    position: absolute;
+    top: 14.5%;
+    left: 5%;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+}
+
+#boxContainer {
+    position: absolute;
+    top: 2.5%;
+    left: 10%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.clickableButton {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+}
+
+#homeButton {
+    background-color: #000000;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    color: white;
+}
+
+.clickableButton:hover {
+    opacity: 0.8;
+}
+
+.clickableButton:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Center pierceContainer in the middle */
+#pierceContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#pierceGap {
+    width: 25vw;
+    height: auto;
+}
+#pierceCaption {
+    font-size: 1.3rem;
+    color: white;
+}
+#pierceCaptionContainer {
+    position: absolute;
+    margin-top: 10px;
+    top: 45%;
+    right: 33%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+/* Position coolZatoContainer on the left side */
+#coolZatoContainer {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    text-align: center;
+}
+#coolZato {
+    width: 20vw;
+    height: auto;
+   
+}
+#coolZatoCaption {
+    font-size: 1.3rem;
+    color: white;
+}
+#coolZatoCaptionContainer {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+/* Position gaugeContainer on the right below coolZatoContainer */
+#gaugeContainer {
+    position: absolute;
+    top: calc(20% + 2vw + 5%); /* Positioned below coolZato */
+    right: 5%;
+    text-align: center;
+}
+
+#gauge {
+    width: 20vw;
+    height: auto;
+}
+#gaugeCaption {
+    font-size: 1.2rem;
+    color: white;
+}
+#gaugeCaptionContainer {
+    position: absolute;
+    margin-top: 10px;
+    top: 35%;
+    right: 4%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+}
+
+#bragCaption{
+    font-size: 1.5rem;
+    color: white;
+}
+#bragCaptionContainer {
+    position: absolute;
+    margin-top: 10px;
+    top: 80%;
+    right: 4%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+}

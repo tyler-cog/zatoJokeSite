@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/Images/homeBG_test.gif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#textBox {
+    position: absolute; /* Allows free positioning */
+    top: 2.5%; /* Adjust to move the element vertically */
+    left: 50%; /* Start by centering the element horizontally */
+    transform: translateX(-50%); /* Adjusts to center the element exactly */
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke: 1px rgb(255, 0, 0);
+  /*  -webkit-text-stroke: 1px black;  Adds a 2px black stroke 
+    text-shadow:
+        2px 2px 0 #000,  Optional: Adds shadow for more depth 
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        -2px -2px 0 #000;
+        */
+}
+
+#muChartContainer {
+    position: absolute;
+    top: 20%; /* Center the container vertically */
+    left: 50%; /* Center the container horizontally */
+    transform: translate(-50%, 0); /* Ensure the container is centered */
+    text-align: center;
+}
+
+#muChart {
+    width: 35vw; /* Adjust the size of the image */
+    height: auto; /* Maintain the aspect ratio */
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+#muCaptionContainer {
+    color: white;
+    position: absolute;
+    top: calc(20% + 21vw); /* Position below the chart dynamically */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Control the width of the text container */
+    max-width: 30vw;
+    font-size: 1.5rem; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8); /* Semi-transparent black background for better readability */
+    padding: 10px; /* Adds space inside the box */
+    border-radius: 10px; /* Smoothes the edges of the box */
+    border: 2px solid white;
+}
+
+#wojackContainer {
+    position: absolute;
+    top: 20%; /* Align it with the muChart */
+    right: 5%; /* Position it on the right */
+    text-align: center;
+}
+
+#zatoWojack {
+    width: 15vw;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+/* #gaugeContainer {
+    position: absolute;
+    top: calc(20% + 15vw + 5%); 
+    right: 5%;
+    text-align: center;
+}
+
+#gauge {
+    width: 20vw;
+    height: auto;
+}
+
+#gaugeCaption {
+    font-size: 1.2rem;
+    color: white; 
+}
+#gaugeCaptionContainer {
+    position: absolute;
+    top: calc(20% + 19vw + 5%);
+    right: 4%;
+    width: 60%;  Control the width of the text container
+    max-width: 22vw; 
+    max-height: 30vh; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);  Semi-transparent black background for better readability 
+    padding: 10px;  Adds space inside the box 
+    border-radius: 10px;  Smoothes the edges of the box 
+    border: 2px solid white;  Optional: Adds a border around the box 
+} */
+
+#dustBabyContainer {
+    position: absolute;
+    top: 20%;
+    left: 5%; /* Position it to the left */
+    text-align: center;
+}
+
+#zatoDustBaby {
+    width: 15vw;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+#zatoPunch{
+    width: 15vw;
+    height: auto;
+   
+}
+#zatoPunchContainer {
+    position: absolute;
+    top: 55%;
+    left: 5%; /* Position it to the left */
+    text-align: center;
+}
+#zatoPunchCaption {
+    font-size: 1.2rem;
+    color: white; 
+}
+#zatoPunchCaptionContainer {
+    position: absolute;
+    top: calc(20% + 22vw + 5%);
+    left: 12%;
+    width: 60%; 
+    max-width: 10vw; 
+    max-height: 30vh; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8); 
+    padding: 10px;
+    border-radius: 10px; 
+    border: 2px solid white;  
+}
+#zatoOmni{
+    width: 15vw;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+}
+#zatoOmniContainer {
+    position: absolute;
+    top: 60%; /* Align it with the muChart */
+    right: 5%; /* Position it on the right */
+    text-align: center;
+}
+
+#noteBox {
+    color: white;
+    position: absolute;
+    top: 14.5%; /* Adjust the position as needed */
+    left: 5%;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+#boxContainer {
+    position: absolute;
+    top: 2.5%; /* Adjust the position as needed */
+    left: 10%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px; /* Space between the boxes */
+}
+
+.clickableButton {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+}
+
+#homeButton {
+    background-color: #000000; /* Green color for 'Yes' */
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    color: white;
+}
+
+/* Optional: Hover effects */
+.clickableButton:hover {
+    opacity: 0.8;
+}
+
+/* Optional: Add focus styles */
+.clickableButton:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
