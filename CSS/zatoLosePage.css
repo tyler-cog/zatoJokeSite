@@ -54,7 +54,7 @@ body {
 #muCaptionContainer {
     color: rgb(255, 0, 0);
     position: absolute;
-    top: calc(20% + 21vw); /* Position below the chart dynamically */
+    top: calc(20% + 19vw); /* Position below the chart dynamically */
     left: 50%;
     transform: translateX(-50%);
     width: 100%; /* Control the width of the text container */
