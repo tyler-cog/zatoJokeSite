@@ -1,4 +1,3 @@
-/* Resetting margin and padding for all elements */
 * {
     margin: 0;
     padding: 0;
@@ -18,31 +17,24 @@ body {
 }
 
 #textBox {
-    position: absolute; /* Allows free positioning */
-    top: 2.5%; /* Adjust to move the element vertically */
-    left: 50%; /* Start by centering the element horizontally */
-    transform: translateX(-50%); /* Adjusts to center the element exactly */
+    position: absolute; 
+    top: 2.5%; 
+    left: 50%;
+    transform: translateX(-50%); 
     color: white;
     font-size: 2rem;
     text-align: center;
-    -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+    -webkit-text-fill-color: rgb(0, 0, 0); 
     -webkit-text-stroke: 1px rgb(255, 0, 0);
-   /*   -webkit-text-stroke: -2px black;Adds a 2px black stroke */
-    /* Optional: Adds shadow for more depth */
-    /* text-shadow:
-        2px 2px 0 #000, 
-        -2px 2px 0 #000,
-        2px -2px 0 #000,
-        -2px -2px 0 #000; */
 }
 
 #boxContainer {
     position: absolute;
-    top: 50%; /* Adjust the position as needed */
+    top: 50%; 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 20px; /* Space between the boxes */
+    gap: 20px; 
 }
 
 .clickableButton {
@@ -57,21 +49,19 @@ body {
 }
 
 #yesButton {
-    background-color: #28a745; /* Green color for 'Yes' */
+    background-color: #28a745;
     color: white;
 }
 
 #noButton {
-    background-color: #dc3545; /* Red color for 'No' */
+    background-color: #dc3545; 
     color: white;
 }
 
-/* Optional: Hover effects */
 .clickableButton:hover {
     opacity: 0.8;
 }
 
-/* Optional: Add focus styles */
 .clickableButton:focus {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
